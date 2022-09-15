@@ -17,6 +17,19 @@
   --bs-body-font-family: var(--bs-font-sans-serif);
 }
 
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
 *,
 *::before,
 *::after {
@@ -2331,6 +2344,9 @@ textarea.form-control-lg {
   height: 100vh;
 }
 
+.padded{
+  padding: 50px;
+}
 
 .panel{
   height: 100vh;
