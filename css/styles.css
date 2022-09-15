@@ -2341,7 +2341,10 @@ textarea.form-control-lg {
 }
 .vh-modal {
   text-align: center;
-  height: 98vh;
+  height: 100vh;
+  padding: 10px;
+  border-radius: 48px;
+  border-color: #fff;
 }
 
 .padded{
@@ -5245,8 +5248,7 @@ textarea.form-control-lg {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 0.125rem solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.75rem;
+  border-radius: 48px;
   outline: 0;
 }
 
