@@ -18,17 +18,20 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+        <style>
+            body, html{ background: #fff; color:#000; font-family: 'Intro', sans-serif; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{list-style-type: none;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
+        </style>
     </head>
     <body  onload="myFunction()" style="margin:0;" id="home" >
        <div id="loader"></div>
             <div style="display:none;" id="myDiv" class="animate-bottom">
             
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center section watch">
+        <header class="masthead bg-primary text-white text-center vh">
             <!-- Navigation-->
           
 
-            <div class="container d-flex align-items-center flex-column hero title">
+            <div class="container d-flex align-items-center flex-column hero">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5 zoom" src="assets/img/portfolio/main_logo.svg" alt="..." />
                 <!-- Masthead Heading-->
@@ -46,8 +49,8 @@
             </div>
         </header>
         <!-- Work Section-->
-        <section class="page-section portfolio section watch" id="portfolio">
-            <div class="container title">
+        <section class="page-section portfolio vh" id="portfolio">
+            <div class="container">
                 <!-- Work Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 ">Lavori</h2>
                 <!-- Icon Divider-->
@@ -88,8 +91,8 @@
                 </div>
             </div>
         </section>
-        <section class="page-section portfolio section watch" id="work_togather">
-            <div class="container title">
+        <section class="page-section portfolio vh" id="work_togather">
+            <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 ">Lavora con me</h2>
                 <!-- Icon Divider-->
@@ -131,8 +134,8 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section portfolio section watch" id="about">
-            <div class="container title">
+        <section class="page-section portfolio vh" id="about">
+            <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary ">Chi sono</h2>
                 <!-- Icon Divider-->
@@ -162,8 +165,8 @@
             
 
         </section>
-        <section class="page-section portfolio section watch"  id="contact">
-            <div class="container title">
+        <section class="page-section portfolio vh"  id="contact">
+            <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary">Contatti</h2>
                 <!-- Icon Divider-->
@@ -180,18 +183,21 @@
                 ></form>
 
                 <input type="hidden" name="form-name" value="contact" id="contact">
-                    <form name="contact" method="POST" data-netlify="true">
-                        <p>
-                            <label>Nome: <input type="text" name="name" /></label>
-                        </p>
-                        <p>
-                            <label>Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                        <p>
-                            <button type="submit">Send</button>
-                        </p>
-                    </form>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <label>Il tuo nome: <input type="text" name="name"  class="form-control" placeholder="Nome" /></label>
+                    </p>
+                    <p>
+                        <label>La tua Email: <input type="email" name="email" class="form-control" placeholder="Email" /></label>
+                    </p>
+                    <p>
+                        <label>Messaggio: <textarea name="message" class="form-control"></textarea></label>
+                    </p>
+                    <p>
+                        <button class="btn btn-xl btn-primary button-posta" type="submit">Invia</button>
+                    
+                    </p>
+                </form>
 
                 <script>
                     document
