@@ -2343,6 +2343,8 @@ textarea.form-control-lg {
   text-align: center;
   height: 100vh;
   padding: 10px;
+  border-radius: 48px;
+  border-color: #fff;
 }
 
 .padded{
